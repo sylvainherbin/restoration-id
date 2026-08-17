@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restoration ID — L’identité numérique des restaurations implanto-portées</title>
+<meta name="description" content="Restoration ID donne à chaque restauration implanto-portée une identité numérique permanente — créée à la fabrication, portée par le patient, lisible par tout professionnel des années plus tard. Programme pilote laboratoires fondateurs ouvert.">
+<link rel="canonical" href="https://restoration-id.com/fr/">
+<link rel="alternate" hreflang="en" href="https://restoration-id.com/">
+<link rel="alternate" hreflang="fr" href="https://restoration-id.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://restoration-id.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://restoration-id.com/fr/">
+<meta property="og:title" content="Restoration ID — L’identité numérique des restaurations implanto-portées">
+<meta property="og:description" content="Ce qui est dans la bouche de votre patient aujourd’hui doit pouvoir être identifié demain. Programme pilote laboratoires fondateurs — Europe & Amérique du Nord.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#16232E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F6B66'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3ER·ID%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Restoration ID",
+  "url": "https://restoration-id.com",
+  "email": "contact@restoration-id.com",
+  "founder": {"@type": "Person", "name": "Sylvain Herbin", "jobTitle": "Dental technician & ceramist"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Caraquet", "addressRegion": "NB", "addressCountry": "CA"},
+  "description": "Identité numérique permanente des restaurations dentaires implanto-portées, créée à la fabrication."
+}
+</script>
+<style>
+:root{
+  --ink:#16232E; --ink-2:#22333F; --ink-3:#0E1820;
+  --paper:#FFFFFF; --mist:#F4F7F8; --line:#DDE4E8;
+  --steel:#5C6B76; --steel-2:#8B98A1;
+  --teal:#0F6B66; --teal-deep:#0B5450; --teal-soft:#E4F0EF; --teal-2:#3E8E89; --teal-3:#6FA8A4; --teal-glow:#7FB8B4;
+  --ok:#1E7D3C; --lab:#1D5FA8; --decl:#B07A12; --none:#B3392E;
+  --sans:'IBM Plex Sans',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --radius:10px;
+  --shadow:0 8px 30px rgba(22,35,46,.08);
+  --shadow-lg:0 18px 50px rgba(22,35,46,.14);
+  --maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.skip{position:absolute;left:-999px;top:0;background:var(--teal);color:#fff;padding:10px 18px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.12;letter-spacing:-.015em}
+a{color:var(--teal)}
+::selection{background:var(--teal);color:#fff}
+
+/* ---------- nav ---------- */
+header.nav{position:sticky;top:0;z-index:100;background:rgba(22,35,46,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:32px;height:32px;border-radius:8px;background:var(--teal);display:grid;place-items:center;font-family:var(--mono);font-size:11px;font-weight:500;color:#fff;letter-spacing:.02em}
+.logo-name{color:#fff;font-weight:700;font-size:17px;letter-spacing:.02em}
+.logo-name span{color:var(--teal-glow)}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{color:#C4CFD6;text-decoration:none;font-size:14px;font-weight:500;transition:color .18s}
+nav.links a:hover,nav.links a:focus-visible{color:#fff}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 24px;border-radius:8px;border:none;cursor:pointer;transition:background .18s, transform .18s, box-shadow .18s}
+.btn:hover{background:var(--teal-deep);transform:translateY(-1px);box-shadow:0 8px 20px rgba(15,107,102,.35)}
+.btn:focus-visible{outline:3px solid var(--teal-glow);outline-offset:2px}
+.btn.nav-cta{padding:9px 18px;font-size:14px}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.08);box-shadow:none}
+.lang-switch{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:5px 10px;color:#C4CFD6!important}
+.lang-switch:hover{border-color:#fff;color:#fff!important}
+@media(max-width:820px){nav.links a:not(.btn):not(.lang-switch){display:none}}
+
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-3) 100%);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 78% 30%,rgba(15,107,102,.22),transparent 65%);pointer-events:none}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center;padding:96px 0 110px}
+.dots{display:flex;gap:9px;margin-bottom:26px}
+.dot{width:11px;height:11px;border-radius:50%}
+.d-ok{background:var(--ok)}.d-lab{background:var(--lab)}.d-decl{background:var(--decl)}.d-none{background:var(--none)}
+.hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:700;max-width:14em}
+.hero .sub{margin-top:22px;font-size:clamp(16px,1.6vw,19px);color:#C4CFD6;max-width:34em}
+.hero .cta-row{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero .pill{font-family:var(--mono);font-size:12.5px;color:var(--teal-glow);border:1px solid rgba(127,184,180,.4);border-radius:99px;padding:6px 14px;letter-spacing:.04em}
+/* layer stack visual */
+.stack{display:flex;flex-direction:column;gap:14px}
+.layer{border-radius:var(--radius);padding:18px 20px;color:#fff;box-shadow:var(--shadow-lg);opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.3,1) forwards}
+.layer:nth-child(1){background:var(--teal);animation-delay:.15s}
+.layer:nth-child(2){background:var(--teal-2);animation-delay:.3s}
+.layer:nth-child(3){background:var(--teal-3);animation-delay:.45s}
+.layer .l-tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;opacity:.85}
+.layer .l-name{font-weight:700;font-size:16.5px;margin-top:2px}
+.layer .l-sub{font-size:13px;opacity:.85}
+.stack .id-chip{background:var(--ink-2);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:14px 20px;font-family:var(--mono);font-size:13.5px;color:#C4CFD6;opacity:0;transform:translateY(14px);animation:rise .7s .6s cubic-bezier(.2,.7,.3,1) forwards}
+.id-chip b{color:var(--teal-glow);font-weight:500}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.layer,.id-chip{animation:none;opacity:1;transform:none}}
+@media(max-width:880px){.hero-in{grid-template-columns:1fr;padding:64px 0 72px}.stack{max-width:420px}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0}
+.eyebrow{font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.14em;color:var(--teal);text-transform:uppercase}
+.h2{font-size:clamp(27px,3.2vw,40px);font-weight:700;margin-top:14px;max-width:18em}
+.lede{margin-top:18px;font-size:17.5px;color:var(--steel);max-width:44em}
+.dark{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);color:#fff}
+.dark .h2{color:#fff}
+.dark .lede{color:#C4CFD6}
+.soft{background:var(--teal-soft)}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* problem chain */
+.chain{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.chain .node{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;position:relative}
+.chain .node h3{font-size:16px;font-weight:600}
+.chain .node p{font-size:13.5px;color:var(--steel);margin-top:6px}
+.chain .node::after{content:"›";position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--steel-2);font-weight:700}
+.chain .node:last-child::after{content:""}
+@media(max-width:880px){.chain{grid-template-columns:1fr 1fr}.chain .node::after{content:""}}
+@media(max-width:520px){.chain{grid-template-columns:1fr}}
+.quote-band{margin-top:48px;background:var(--ink);color:#fff;border-radius:14px;padding:34px 38px;box-shadow:var(--shadow-lg)}
+.quote-band .q-lead{color:#C4CFD6;font-size:15px}
+.quote-band .q{font-size:clamp(19px,2.4vw,26px);font-weight:700;margin-top:8px}
+.callout{margin-top:48px;background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:24px 28px;font-size:15.5px}
+.callout b{color:var(--teal)}
+
+/* solution layers big */
+.sol{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px;align-items:start}
+.sol-points{display:flex;flex-direction:column;gap:22px}
+.pt{display:flex;gap:14px;align-items:flex-start}
+.pt .b{flex-shrink:0;width:9px;height:9px;border-radius:50%;background:var(--teal);margin-top:8px}
+.pt p{font-size:15.5px}
+.sol .stack .layer{animation:none;opacity:1;transform:none}
+@media(max-width:880px){.sol{grid-template-columns:1fr}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.step{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:transform .2s, box-shadow .2s}
+.step:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.step.dark-card{background:var(--ink);border-color:var(--ink);color:#fff}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:700;font-size:17px}
+.step h3{margin-top:16px;font-size:17px}
+.step p{margin-top:8px;font-size:13.8px;color:var(--steel)}
+.step.dark-card p{color:#C4CFD6}
+@media(max-width:880px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.note{margin-top:34px;font-style:italic;color:var(--teal);font-size:14.5px}
+
+/* provenance */
+.prov-list{margin-top:44px;display:flex;flex-direction:column;gap:20px;max-width:52em}
+.prov{display:flex;gap:16px;align-items:flex-start}
+.prov .dot{width:15px;height:15px;flex-shrink:0;margin-top:5px}
+.prov b{font-size:16.5px}
+.prov span{color:#AEBEC7;font-size:15px}
+.dark .fine{margin-top:38px;color:var(--teal-glow);font-style:italic;font-size:14.5px}
+
+/* lab cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.card{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .2s, box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card h3{color:var(--teal);font-size:18px}
+.card p{margin-top:10px;font-size:14.8px;color:var(--ink)}
+@media(max-width:720px){.cards{grid-template-columns:1fr}}
+
+/* pilot */
+.pilot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.pblock{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.pblock .pn{font-family:var(--mono);font-size:18px;font-weight:500;color:var(--teal)}
+.pblock h3{margin-top:12px;font-size:17.5px}
+.pblock p{margin-top:8px;font-size:14.2px;color:var(--steel)}
+@media(max-width:820px){.pilot-grid{grid-template-columns:1fr}}
+.form-card{margin-top:52px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:40px;box-shadow:var(--shadow-lg);max-width:680px}
+.form-card h3{font-size:21px}
+.form-card .fc-sub{color:var(--steel);font-size:14.5px;margin-top:6px}
+form{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:12.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--steel)}
+.field input,.field select,.field textarea{font-family:var(--sans);font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);transition:border-color .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal)}
+form .btn{grid-column:1/-1;justify-self:start}
+.alt-contact{margin-top:18px;font-size:14px;color:var(--steel)}
+@media(max-width:560px){form{grid-template-columns:1fr}}
+
+/* about */
+.about-in{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.about .h2{max-width:14em}
+.about p{margin-top:16px;color:var(--steel);font-size:16px;max-width:36em}
+.cred{background:var(--ink);color:#fff;border-radius:14px;padding:32px;box-shadow:var(--shadow-lg)}
+.cred .c-num{font-size:44px;font-weight:700;color:var(--teal-glow);line-height:1}
+.cred .c-lab{font-size:14px;color:#C4CFD6;margin-top:4px}
+.cred hr{border:none;border-top:1px solid rgba(255,255,255,.12);margin:22px 0}
+.cred .c-loc{font-family:var(--mono);font-size:12.5px;color:#8FA0AA;letter-spacing:.04em}
+@media(max-width:820px){.about-in{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--ink-3);color:#8FA0AA;padding:56px 0 40px;font-size:13.5px}
+.f-in{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.f-brand{color:#fff;font-weight:700;font-size:16px}
+.f-brand span{color:var(--teal-glow)}
+footer a{color:#C4CFD6;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.legal{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;line-height:1.7;color:#6B7B86;max-width:62em}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Accueil Restoration ID">
+      <span class="logo-mark">R·ID</span>
+      <span class="logo-name">RESTORATION&nbsp;<span>ID</span></span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#problem">Problème</a>
+      <a href="#solution">Solution</a>
+      <a href="#how">Fonctionnement</a>
+      <a href="#labs">Laboratoires</a>
+      <a class="btn nav-cta" href="#pilot">Rejoindre le pilote</a>
+      <a href="/" lang="en" hreflang="en" class="lang-switch" aria-label="English version">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <div class="dots" aria-hidden="true"><span class="dot d-ok"></span><span class="dot d-lab"></span><span class="dot d-decl"></span><span class="dot d-none"></span></div>
+      <h1>Ce qui est dans la bouche de votre patient aujourd’hui doit pouvoir être identifié demain.</h1>
+      <p class="sub">Restoration ID donne à chaque restauration implanto-portée une identité numérique permanente — créée au moment de la fabrication, portée par le patient, lisible par tout professionnel autorisé des années, voire des décennies plus tard.</p>
+      <div class="cta-row">
+        <a class="btn" href="#pilot">Rejoindre les laboratoires fondateurs</a>
+        <span class="pill">PILOTE — EUROPE &amp; AMÉRIQUE DU NORD</span>
+      </div>
+    </div>
+    <div class="stack" aria-label="Les trois couches de l’identité d’une restauration">
+      <div class="layer"><div class="l-tag">COUCHE 3</div><div class="l-name">Restauration</div><div class="l-sub">couronne · bridge · suprastructure</div></div>
+      <div class="layer"><div class="l-tag">COUCHE 2</div><div class="l-name">Interface prothétique</div><div class="l-sub">Ti-base · pilier · vis</div></div>
+      <div class="layer"><div class="l-tag">COUCHE 1</div><div class="l-name">Implant</div><div class="l-sub">fixture endo-osseuse</div></div>
+      <div class="id-chip"><b>ID</b> RID-2026-0001 &nbsp;·&nbsp; + QR vers le dossier numérique</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Le problème</div>
+      <h2 class="h2">Un implant dure des décennies. Pas ses données.</h2>
+      <p class="lede">Un implant peut rester en place trente ans. Pendant ce temps, le patient déménage, le praticien prend sa retraite, le laboratoire ferme, les logiciels changent, les fichiers disparaissent. L’identité technique du travail — référence implantaire, connexion, composants prothétiques, vis, matériaux, fichiers numériques — est dispersée entre des acteurs qui ne seront pas tous là le jour où on en aura besoin.</p>
+    </div>
+    <div class="chain rv">
+      <div class="node"><h3>Chirurgien</h3><p>pose l’implant — lot, référence, connexion</p></div>
+      <div class="node"><h3>Praticien</h3><p>prescrit la restauration — le dossier reste au cabinet</p></div>
+      <div class="node"><h3>Laboratoire</h3><p>fabrique — composants, matériaux, fichiers numériques</p></div>
+      <div class="node"><h3>Patient</h3><p>ne connaît souvent aucune des références</p></div>
+    </div>
+    <div class="quote-band rv">
+      <div class="q-lead">Des années plus tard, la question du nouveau praticien est toujours la même :</div>
+      <div class="q">« Qu’est-ce qui se trouve exactement dans la bouche de ce patient ? »</div>
+    </div>
+    <div class="callout rv">
+      <b>Le signal réglementaire.</b> En Europe, la traçabilité implantaire est déjà une obligation : le règlement MDR impose aux fabricants de remettre une carte d’implant à chaque patient. Mais cette carte couvre uniquement la fixture — ni les composants prothétiques, ni la restauration, ni son historique. C’est exactement l’espace de Restoration ID.
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="soft" id="solution">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">La solution</div>
+      <h2 class="h2">Une identité, trois couches, née au laboratoire</h2>
+      <p class="lede">Chaque restauration quitte le laboratoire avec sa fiche d’identité complète : un document structuré et un QR code vers le dossier numérique. La donnée est saisie là où et quand elle existe déjà — pendant la fabrication — au lieu d’être reconstruite dix ans trop tard.</p>
+    </div>
+    <div class="sol rv">
+      <div class="sol-points">
+        <div class="pt"><span class="b"></span><p><strong>Trois durées de vie, trois identités, un historique lié.</strong> L’implant peut survivre à plusieurs restaurations ; l’interface peut être conservée. Chaque couche garde sa propre fiche, liée aux autres.</p></div>
+        <div class="pt"><span class="b"></span><p><strong>L’historique est un journal.</strong> Les événements s’ajoutent au fil du temps — réparations, maintenance, remplacements — et ne sont jamais écrasés.</p></div>
+        <div class="pt"><span class="b"></span><p><strong>Références et lots en clair.</strong> Fabricant, système, Ø × longueur, connexion, Ti-base, vis, couple de serrage, armature, céramique de stratification, teinte, fichiers numériques.</p></div>
+      </div>
+      <div class="stack">
+        <div class="layer"><div class="l-tag">COUCHE 3</div><div class="l-name">Restauration</div><div class="l-sub">armature · céramique + lot · teinte · fabrication · fichiers · technicien</div></div>
+        <div class="layer"><div class="l-tag">COUCHE 2</div><div class="l-name">Interface prothétique</div><div class="l-sub">Ti-base ou pilier · réf. vis · couple · lots</div></div>
+        <div class="layer"><div class="l-tag">COUCHE 1</div><div class="l-name">Implant</div><div class="l-sub">fabricant · système · réf. exacte · Ø × L · connexion · lot · date</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Fonctionnement</div>
+      <h2 class="h2">Quatre étapes. Zéro friction ajoutée.</h2>
+      <p class="lede">La fiche se construit avec les informations que le laboratoire manipule déjà : bon de travail, composants commandés, lots reçus.</p>
+    </div>
+    <div class="steps rv">
+      <div class="step"><div class="n">1</div><h3>Fabrication</h3><p>Le cas implanto-porté entre au laboratoire avec sa prescription et ses composants.</p></div>
+      <div class="step"><div class="n">2</div><h3>Documentation</h3><p>Références, lots et matériaux sont saisis une fois — moins de cinq minutes par dossier.</p></div>
+      <div class="step"><div class="n">3</div><h3>Livraison</h3><p>La restauration part avec sa fiche Restoration ID : document et QR code remis au praticien.</p></div>
+      <div class="step dark-card"><div class="n">4</div><h3>Continuité</h3><p>Des années plus tard, tout professionnel autorisé retrouve l’identité exacte du travail en un scan.</p></div>
+    </div>
+    <p class="note rv">Aucun nom de patient n’entre dans le système : les fiches fonctionnent avec les références pseudonymisées du laboratoire.</p>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="dark" id="trust">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Le principe de confiance</div>
+      <h2 class="h2">Jamais une donnée incertaine présentée comme un fait</h2>
+      <p class="lede">Chaque champ d’une fiche Restoration ID porte sa provenance — source, auteur, date. Le professionnel qui la lit sait exactement ce qui est prouvé et ce qui ne l’est pas.</p>
+    </div>
+    <div class="prov-list rv">
+      <div class="prov"><span class="dot d-ok"></span><p><b>Vérifié</b> — <span>confirmé par un document fabricant (étiquette, certificat, UDI).</span></p></div>
+      <div class="prov"><span class="dot d-lab"></span><p><b>Documenté laboratoire</b> — <span>issu du dossier de fabrication du laboratoire.</span></p></div>
+      <div class="prov"><span class="dot d-decl"></span><p><b>Déclaré</b> — <span>transmis sans preuve documentaire ; en attente de confirmation.</span></p></div>
+      <div class="prov"><span class="dot d-none"></span><p><b>Non documenté</b> — <span>l’information manque, et le système le dit plutôt que d’inventer.</span></p></div>
+    </div>
+    <p class="fine rv">L’incertitude est une donnée, pas un défaut.</p>
+  </div>
+</section>
+
+<!-- FOR LABS -->
+<section id="labs">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Pour les laboratoires</div>
+      <h2 class="h2">Un argument commercial, pas une tâche administrative</h2>
+    </div>
+    <div class="cards rv">
+      <div class="card"><h3>Différenciation</h3><p>« Chaque restauration livrée avec son identité numérique. » Un standard de service que vos concurrents n’offrent pas.</p></div>
+      <div class="card"><h3>Réponse instantanée</h3><p>Un praticien appelle pour un cas d’il y a six ans ? La réponse tient dans un scan de QR, pas dans une après-midi d’archives.</p></div>
+      <div class="card"><h3>Dossier de fabrication structuré</h3><p>Votre traçabilité interne — composants, lots, matériaux, protocoles — devient retrouvable.</p></div>
+      <div class="card"><h3>Image premium</h3><p>Le document accompagne le travail comme un certificat et rend la qualité de fabrication visible pour le praticien et le patient.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PILOT -->
+<section class="soft" id="pilot">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Programme pilote</div>
+      <h2 class="h2">Devenez laboratoire fondateur</h2>
+      <p class="lede">Nous ouvrons le programme à un petit nombre de laboratoires partenaires en Europe et en Amérique du Nord. Vous façonnez l’outil ; vous gardez des conditions fondateurs permanentes.</p>
+    </div>
+    <div class="pilot-grid rv">
+      <div class="pblock"><div class="pn">01</div><h3>Vos 20 premiers dossiers</h3><p>Des fiches Restoration ID produites avec vous sur des cas réels, sans engagement.</p></div>
+      <div class="pblock"><div class="pn">02</div><h3>Mesure honnête</h3><p>Temps de saisie, réactions des praticiens, valeur perçue — des chiffres partagés, pas un discours.</p></div>
+      <div class="pblock"><div class="pn">03</div><h3>Décision ensemble</h3><p>Si la valeur est démontrée, votre tarif fondateur est garanti. Sinon, vous gardez vos fiches — elles vous appartiennent.</p></div>
+    </div>
+    <div class="form-card rv" id="contact">
+      <h3>Demander à rejoindre le pilote</h3>
+      <p class="fc-sub">Quelques informations, et nous revenons vers vous sous deux jours ouvrés.</p>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field"><label for="f-name">Nom</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f-lab">Laboratoire</label><input id="f-lab" name="laboratory" type="text" autocomplete="organization" required></div>
+        <div class="field"><label for="f-email">Courriel</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-country">Pays</label><input id="f-country" name="country" type="text" autocomplete="country-name" required></div>
+        <div class="field full"><label for="f-vol">Volume implanto-porté mensuel</label>
+          <select id="f-vol" name="volume">
+            <option>Moins de 10 dossiers</option>
+            <option>10–30 dossiers</option>
+            <option>30–100 dossiers</option>
+            <option>Plus de 100 dossiers</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-msg">Message (facultatif)</label><textarea id="f-msg" name="message" rows="4"></textarea></div>
+        <button class="btn" type="submit">Envoyer la demande</button>
+      </form>
+      <p class="alt-contact">Vous préférez le courriel ? Écrivez-nous directement : <a href="mailto:contact@restoration-id.com">contact@restoration-id.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-in rv">
+    <div>
+      <div class="eyebrow">À propos</div>
+      <h2 class="h2">Conçu par un céramiste, pas par un éditeur de logiciels</h2>
+      <p>Restoration ID a été lancé par Sylvain Herbin, prothésiste dentaire et céramiste avec 26 ans d’établi, spécialisé en stratification et en restaurations complètes implanto-portées. Le projet naît d’un problème vécu quotidiennement au laboratoire — pas d’une étude de marché.</p>
+      <p>Basé à Caraquet, Nouveau-Brunswick, Canada. Au service des laboratoires d’Europe et d’Amérique du Nord.</p>
+    </div>
+    <div class="cred">
+      <div class="c-num">26</div>
+      <div class="c-lab">ans d’établi — stratification céramique &amp; restaurations complètes implanto-portées</div>
+      <hr>
+      <div class="c-loc">CARAQUET · NB · CANADA<br>EUROPE — NORTH AMERICA</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <div>
+        <div class="f-brand">RESTORATION&nbsp;<span>ID</span></div>
+        <div style="margin-top:8px">Caraquet, NB, Canada</div>
+      </div>
+      <div>
+        <a href="mailto:contact@restoration-id.com">contact@restoration-id.com</a><br>
+        <a href="#pilot" style="display:inline-block;margin-top:6px">Programme laboratoires fondateurs</a>
+      </div>
+    </div>
+    <div class="legal">
+      © 2026 Restoration ID — Tous droits réservés. Restoration ID est un outil de traçabilité et de documentation. Il ne remplace ni le dossier patient du praticien, ni les obligations réglementaires de chaque acteur, ni le jugement clinique.
+    </div>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
