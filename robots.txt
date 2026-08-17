@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://restoration-id.com/sitemap.xml
